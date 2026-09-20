@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_USER = 'aishani874'
         IMAGE_NAME      = 'lab12-node-app'
-        DOCKER_BIN      = '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe"'
+        DOCKER_BIN      = '"C:\\Users\\tuhi8\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe"'
     }
 
     stages {
