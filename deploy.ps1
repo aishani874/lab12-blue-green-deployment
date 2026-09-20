@@ -82,7 +82,7 @@ http {
 }
 "@
 
-$nginxConf \vert{} Out-File -FilePath "$PSScriptRoot\nginx\nginx.conf" -Encoding ascii
+$nginxConf | Out-File -FilePath "$PSScriptRoot\nginx\nginx.conf" -Encoding ascii
 
 # 5. Check if router container exists, otherwise run it
 $routerExists = &$DOCKER ps -a -q -f "name=nginx-router"
