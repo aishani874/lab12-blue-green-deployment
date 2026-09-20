@@ -3,10 +3,9 @@ param (
     [string]$DockerHubUser = "aishani87"
 )
 
-$DOCKER = "C:\Program Files\Docker\Docker\resources\bin\docker.exe"
+$DOCKER = "C:\Users\tuhi8\AppData\Local\Programs\DockerDesktop\resources\bin\docker.exe"
 $FullImage = "$DockerHubUser/lab12-node-app:$ImageTag"
 
-# 1. Determine currently active environment by querying the router (default to blue)
 $activeEnv = "none"
 try {
     $res = Invoke-RestMethod -Uri "http://localhost/health" -TimeoutSec 2 -ErrorAction Stop

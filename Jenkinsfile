@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_USER = 'aishani874'
+        DOCKER_HUB_USER = 'aishani87'
         IMAGE_NAME      = 'lab12-node-app'
         DOCKER_BIN      = '"C:\\Users\\tuhi8\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe"'
     }
